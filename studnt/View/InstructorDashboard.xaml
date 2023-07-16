@@ -1,0 +1,212 @@
+﻿<Window x:Class="studnt.View.InstructorDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:studnt.View"
+        mc:Ignorable="d"
+        Title="InstructorDashboard"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Height="800" 
+        Width="600">
+    <Grid Background="Black">
+        <StackPanel HorizontalAlignment="Center">
+
+
+            <Grid Margin="0 40 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Button 
+                Grid.Column="0"
+                x:Name="Back_App"
+                Style= "{StaticResource BackAppStyle}"
+                Click="Back_App_Click"
+                Margin="0 15"/>
+
+
+
+                <TextBlock Text="INTRUCTOR DASHBOARD"
+                            
+                               Foreground="Green"
+                               FontWeight="Bold"
+                               FontSize="20"
+                               FontFamily="Montserrat"
+                               Grid.Column="1"
+                               VerticalAlignment="Center"
+                               Margin="0,0,0,0"
+                           TextAlignment="Center"
+                           />
+            </Grid>
+            
+           
+            
+            <Button Content="Add new Student"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="addNewStudent"
+                        Width="250"
+                        Height="30"
+                        Margin="0 40 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="addNewStudent_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Add new Module"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="addNewModule"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="addNewModule_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Remove Student"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="removeStudent"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="removeStudent_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Delete Module"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="deleteModule"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="deleteModule_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Total Student List"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="TSudentList"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="tSudentList_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Total Modue List"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="tModuleList"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="tModuleList_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Update Student Details"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="updateStudentDetails"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="updateStudentDetails_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Update Module Details"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="updateModuleDetails"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="updateModuleDetails_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Calculate the GPA"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="calculateTheGPA"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="calculateTheGPA_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button Content="Calculate the Rank"
+                        Style="{StaticResource  FuncButton}"
+                        x:Name="calculateTheRank"
+                        Width="250"
+                        Height="30"
+                        Margin="0 20 0 0"
+                        FontSize="15"
+                        FontFamily="Montserrat"
+                        Click="removeModule_Click_1">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            
+
+        </StackPanel>
+    </Grid>
+</Window>
